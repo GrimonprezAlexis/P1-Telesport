@@ -1,1 +1,161 @@
-/* You can add global styles to this file, and also import other style files */
+@import "./styles/themes.scss";
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+html {
+  font-size: 16px;
+  scroll-behavior: smooth;
+}
+
+body {
+  font-family: $font-main;
+  font-size: $font-size-base;
+  background-color: $color-light;
+  color: $color-dark;
+  line-height: 1.6;
+  min-height: 100vh;
+}
+
+/* === TYPOGRAPHY === */
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  color: $color-dark;
+  font-weight: 700;
+  line-height: 1.25;
+  margin-bottom: 1rem;
+}
+
+h1 {
+  font-size: 2.5rem;
+}
+
+h2 {
+  font-size: 2rem;
+}
+
+h3 {
+  font-size: 1.5rem;
+}
+
+h4 {
+  font-size: 1.25rem;
+}
+
+h5 {
+  font-size: 1.1rem;
+}
+
+h6 {
+  font-size: 1rem;
+}
+
+p {
+  font-size: 1rem;
+  color: $color-gray;
+  margin-bottom: 1rem;
+}
+
+/* === LINKS === */
+a {
+  color: $color-primary;
+  text-decoration: none;
+  transition: color 0.2s ease-in-out;
+
+  &:hover {
+    color: darken($color-primary, 10%);
+    text-decoration: underline;
+  }
+}
+
+/* === LISTS === */
+ul,
+ol {
+  margin-left: 1.5rem;
+  margin-bottom: 1rem;
+}
+
+/* === BUTTONS === */
+button {
+  font-family: $font-main;
+  font-size: $font-size-base;
+  padding: 0.5rem 1rem;
+  border: none;
+  border-radius: $radius;
+  cursor: pointer;
+  background-color: $color-primary;
+  color: $color-white;
+  transition: background-color 0.3s ease;
+
+  &:hover {
+    background-color: darken($color-primary, 10%);
+  }
+
+  &:disabled {
+    background-color: $color-gray;
+    cursor: not-allowed;
+  }
+}
+
+/* === INPUTS & FORMS === */
+input,
+select,
+textarea {
+  font-family: $font-main;
+  padding: 0.5rem;
+  font-size: $font-size-base;
+  border: 1px solid lighten($color-dark, 40%);
+  border-radius: $radius;
+  width: 100%;
+  max-width: 100%;
+  box-sizing: border-box;
+  margin-bottom: 1rem;
+  transition: border-color 0.3s;
+
+  &:focus {
+    outline: none;
+    border-color: $color-primary;
+  }
+}
+
+/* === CONTAINERS === */
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 1rem;
+}
+
+/* === UTILITIES === */
+.text-center {
+  text-align: center;
+}
+
+.text-right {
+  text-align: right;
+}
+
+.text-left {
+  text-align: left;
+}
+
+.mt-1 {
+  margin-top: $spacing;
+}
+.mt-2 {
+  margin-top: $spacing-lg;
+}
+.mb-1 {
+  margin-bottom: $spacing;
+}
+.mb-2 {
+  margin-bottom: $spacing-lg;
+}

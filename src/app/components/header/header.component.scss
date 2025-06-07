@@ -1,0 +1,49 @@
+@use "../../../styles/themes.scss" as *;
+
+.app-header {
+  background-color: $color-white;
+  border-bottom: 2px solid $color-primary;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.05);
+  padding: 0.75rem 1rem;
+
+  .container {
+    max-width: 1200px;
+    margin: auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  .logo-area {
+    display: flex;
+    align-items: center;
+
+    img {
+      height: 40px;
+      margin-right: 0.5rem;
+    }
+
+    .brand {
+      font-size: 1.5rem;
+      font-weight: 700;
+      color: var(--dark);
+    }
+  }
+
+  .nav {
+    display: flex;
+    gap: 1.5rem;
+
+    a {
+      text-decoration: none;
+      font-weight: 500;
+      color: var(--dark);
+      transition: color 0.3s;
+
+      &:hover,
+      &.active-link {
+        color: var(--turquoise);
+      }
+    }
+  }
+}

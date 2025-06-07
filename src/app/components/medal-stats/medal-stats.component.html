@@ -1,0 +1,10 @@
+<div class="medal-stats__header">
+  <h2 *ngIf="title" class="medal-stats__subtitle">{{ title }}</h2>
+</div>
+
+<div class="medal-stats">
+  <div class="medal-stats__card" *ngFor="let stat of stats">
+    <span class="label">{{ stat.label }}</span>
+    <span class="value">{{ stat.value }}</span>
+  </div>
+</div>

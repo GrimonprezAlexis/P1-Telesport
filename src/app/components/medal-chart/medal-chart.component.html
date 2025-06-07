@@ -1,0 +1,13 @@
+<div class="medal-chart">
+  <ngx-charts-pie-chart
+    [results]="chartData"
+    [legend]="true"
+    [labels]="true"
+    [doughnut]="false"
+    [explodeSlices]="false"
+    [gradient]="false"
+    [tooltipDisabled]="false"
+    (select)="onSelectCountry($event)"
+  >
+  </ngx-charts-pie-chart>
+</div>

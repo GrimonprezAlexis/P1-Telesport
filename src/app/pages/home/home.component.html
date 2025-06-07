@@ -1,3 +1,21 @@
-<h2>Olympic games app</h2>
-<hr />
-<p>{{ (olympics$ | async)?.length }} data loaded</p>
+<section class="medal-dashboard container">
+  <h1 id="page-title">Olympic games app</h1>
+
+  <app-error-handler
+    *ngIf="isError && !isLoading"
+    [errorMessage]="'Les données pour ce pays sont introuvables.'"
+  />
+
+  <app-medal-stats
+    title="Medals per Country"
+    [stats]="[
+      { label: 'Number of JOs', value: totalJO },
+      { label: 'Number of countries', value: totalCountries }
+    ]"
+  />
+
+  <app-medal-chart
+    [chartData]="chartData"
+    (selectCountry)="onSelectCountry($event)"
+  ></app-medal-chart>
+</section>

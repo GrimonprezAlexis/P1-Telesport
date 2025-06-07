@@ -1,4 +1,9 @@
-<div class="center">
-  <h2>No corresponding page found</h2>
-  <a routerLink="">Go back</a>
-</div>
+<section class="medal-dashboard container">
+  <h1 id="page-title">Error</h1>
+
+  <app-error-handler
+    [isLoading]="false"
+    [isError]="true"
+    [errorMessage]="'No corresponding page found.'"
+  />
+</section>

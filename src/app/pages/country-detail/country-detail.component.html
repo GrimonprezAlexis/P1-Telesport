@@ -1,0 +1,27 @@
+<section class="country-detail-dashboard container">
+  <h1 id="page-title">Olympic games app</h1>
+  <button class="btn btn-primary" (click)="goBack()">← Retour</button>
+
+  <app-error-handler
+    [isLoading]="isLoading"
+    [isError]="isError"
+    [errorMessage]="'Les données pour ce pays sont introuvables.'"
+  />
+
+  <div *ngIf="country && !isLoading && !isError" class="detail-container">
+    <h2>{{ country.country }}</h2>
+
+    <app-medal-stats
+      title="Name of the country"
+      [stats]="[
+        { label: 'Number of entries', value: country.participations.length },
+        { label: 'Total number medals', value: totalMedals },
+        { label: 'Total number of athletes', value: totalAthletes }
+      ]"
+    />
+
+    <app-charts-line-chart
+      [data]="[{ name: country.country, series: chartData }]"
+    />
+  </div>
+</section>
