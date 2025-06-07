@@ -1,6 +1,7 @@
 # OlympicGamesStarter
-Projet 2 - Développez le front-end en utilisant Angular
-Développeur pour ESN DelivWeb - Projet pour le compte de la chaîne de télévision TéléSport.
+Projet 2 - Développez le front-end en utilisant Angular, Développeur pour ESN DelivWeb - Projet pour le compte de la chaîne de télévision TéléSport.
+
+![Capture d’écran 2025-06-07 à 16 35 49](https://github.com/user-attachments/assets/465f205f-f676-4943-8bcd-bb12e4549832)
 
 ### Objectif
 Ces derniers souhaitent créer une nouvelle application web interactive pour préparer les prochains Jeux Olympiques. Un dashboard permettant de visualiser les informations des précédents Jeux olympiques (nombre de médailles par pays, etc.)
@@ -30,6 +31,10 @@ Ces derniers souhaitent créer une nouvelle application web interactive pour pr�
 - Informé l'utilisateur en cas d'erreur lors de la récupération des données
 - Informé l'utilisateur en cas de chargement des données
 - Informé l'utilisateur en cas de succès lors de la récupération des données
+
+![Capture d’écran 2025-06-07 à 16 36 30](https://github.com/user-attachments/assets/0e2b8cdc-d36b-42ec-9abf-428d3fe5fcff)
+![Capture d’écran 2025-06-07 à 16 36 50](https://github.com/user-attachments/assets/eb206bf6-0465-4563-8331-718cae7d0e4f)
+
 
 ### Technlogies
 Angular, TypeScript, RxJS, HTML, CSS
